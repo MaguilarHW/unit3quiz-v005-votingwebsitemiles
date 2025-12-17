@@ -19,7 +19,6 @@ A React + Vite voting website application hosted on Firebase.
 ✅ Firebase project created: `unit3quiz-v005-voting`  
 ✅ Firebase web app created  
 ✅ Firebase configuration files created  
-✅ Environment variables configured  
 ✅ Firebase SDK installed  
 
 ## Enable Firestore Database
@@ -42,21 +41,6 @@ After enabling Firestore, you can deploy the security rules:
 ```bash
 firebase deploy --only firestore:rules
 ```
-
-## Environment Variables
-
-The `.env` file has been created with your Firebase configuration:
-
-```env
-VITE_FIREBASE_API_KEY=AIzaSyAn6iS0kWf2U-LMYIApq6_fTMFdFWDehcQ
-VITE_FIREBASE_AUTH_DOMAIN=unit3quiz-v005-voting.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=unit3quiz-v005-voting
-VITE_FIREBASE_STORAGE_BUCKET=unit3quiz-v005-voting.firebasestorage.app
-VITE_FIREBASE_MESSAGING_SENDER_ID=205539035410
-VITE_FIREBASE_APP_ID=1:205539035410:web:aeda3cb1cf1444a4774bcb
-```
-
-**Note**: The `.env` file is in `.gitignore` to keep your credentials secure.
 
 ## Install Dependencies
 
@@ -134,7 +118,6 @@ const readData = async () => {
 ├── firebase.json            # Firebase hosting and Firestore config
 ├── firestore.rules          # Firestore security rules
 ├── firestore.indexes.json   # Firestore indexes configuration
-├── .env                     # Environment variables (already created)
 └── package.json
 ```
 
@@ -168,11 +151,9 @@ firebase deploy --only firestore:rules
 ### Firestore permission denied
 - Make sure Firestore is enabled in Firebase Console
 - Check your Firestore security rules
-- Verify your `.env` file has the correct values
 
 ### Build fails
 - Make sure you've installed dependencies: `npm install`
-- Verify the `.env` file exists and has all required variables
 
 ### Deployment fails
 - Ensure you're logged in: `firebase login`
