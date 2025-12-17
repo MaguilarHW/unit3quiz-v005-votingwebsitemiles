@@ -153,7 +153,7 @@ function App() {
       <footer className="app-footer">
         <p>
           <a
-            href="https://github.com/yourusername/unit3quiz-v005-votingwebsitemiles"
+            href="https://github.com/MaguilarHW/unit3quiz-v005-votingwebsitemiles"
             target="_blank"
             rel="noopener noreferrer"
           >
