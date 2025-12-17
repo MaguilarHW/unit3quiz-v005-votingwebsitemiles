@@ -1,0 +1,242 @@
+.voting-container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  border: 2px solid #e5e7eb;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.voting-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.voting-header h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.voting-subtitle {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin: 0;
+  font-style: italic;
+}
+
+.vote-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.vote-button {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 1.5rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 3px solid;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ffffff;
+  color: #1a202c;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.vote-button:hover:not(.disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.vote-button:active:not(.disabled) {
+  transform: translateY(-1px);
+}
+
+.vote-button.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.vote-support {
+  background: #ffffff;
+  border-color: #228b22;
+  color: #228b22;
+}
+
+.vote-support:hover:not(.disabled) {
+  background: #228b22;
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(34, 139, 34, 0.3);
+}
+
+.vote-against {
+  background: #ffffff;
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+.vote-against:hover:not(.disabled) {
+  background: #dc2626;
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
+}
+
+.vote-icon {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.vote-text {
+  font-size: 1.1rem;
+}
+
+.vote-thank-you {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #f0f9ff;
+  border-radius: 8px;
+  border: 2px solid #1e3a8a;
+}
+
+.vote-thank-you p {
+  color: #1e3a8a;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.vote-results {
+  margin-top: 2rem;
+}
+
+.vote-results h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.results-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1e3a8a;
+}
+
+.support-value {
+  color: #228b22;
+}
+
+.against-value {
+  color: #dc2626;
+}
+
+.results-bars {
+  margin-top: 1.5rem;
+}
+
+.result-bar {
+  display: flex;
+  height: 50px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.bar-fill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transition: width 0.5s ease;
+  position: relative;
+}
+
+.support-fill {
+  background: linear-gradient(135deg, #228b22 0%, #32cd32 100%);
+}
+
+.against-fill {
+  background: linear-gradient(135deg, #dc143c 0%, #ff4757 100%);
+}
+
+.bar-label {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  white-space: nowrap;
+}
+
+.loading-votes {
+  text-align: center;
+  padding: 2rem;
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .voting-container {
+    padding: 1.5rem;
+  }
+
+  .vote-buttons {
+    flex-direction: column;
+  }
+
+  .vote-button {
+    max-width: 100%;
+  }
+
+  .results-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
