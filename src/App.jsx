@@ -109,53 +109,21 @@ function App() {
               <h2>Statement of Intent</h2>
               <div className="statement-content">
                 <p>
-                  The data presented above reveals a critical public health
-                  crisis affecting our nation. Drug overdose deaths have reached
-                  alarming levels, with trends showing persistent increases
-                  across multiple substance categories including opioids,
-                  cocaine, heroin, and synthetic drugs.
-                </p>
-                <p>
-                  As a public servant committed to the health and safety of our
-                  communities, I believe we must take immediate and
-                  comprehensive action. This crisis demands a multi-faceted
-                  approach that includes:
-                </p>
-                <ul>
-                  <li>
-                    <strong>Enhanced Prevention Programs:</strong> Implementing
-                    evidence-based prevention strategies in schools and
-                    communities to reduce substance abuse initiation.
-                  </li>
-                  <li>
-                    <strong>Expanded Treatment Access:</strong> Ensuring that
-                    all individuals struggling with substance use disorders have
-                    access to quality, affordable treatment and recovery
-                    services.
-                  </li>
-                  <li>
-                    <strong>Harm Reduction Initiatives:</strong> Supporting
-                    programs such as naloxone distribution and supervised
-                    consumption sites that save lives and connect people to
-                    care.
-                  </li>
-                  <li>
-                    <strong>Mental Health Integration:</strong> Addressing the
-                    underlying mental health conditions that often co-occur with
-                    substance use disorders.
-                  </li>
-                  <li>
-                    <strong>Data-Driven Policy:</strong> Using comprehensive
-                    data like this to inform policy decisions and allocate
-                    resources where they are most needed.
-                  </li>
-                </ul>
-                <p>
-                  The numbers we see are not just statistics—they represent
-                  lives lost, families shattered, and communities in crisis. We
-                  have a moral obligation to act decisively. I am committed to
-                  working across party lines to implement solutions that will
-                  save lives and help our communities heal.
+                  But, if when you say drugs you mean the oil of conversation,
+                  the philosophic substance, the elixir that is consumed when
+                  good fellows get together, that puts a song in their hearts
+                  and laughter on their lips, and the warm glow of contentment
+                  in their eyes; if you mean celebration and joy; if you mean
+                  the stimulating substance that puts the spring in the old
+                  gentleman's step on a frosty, crispy morning; if you mean the
+                  substance which enables a man to magnify his joy, and his
+                  happiness, and to forget, if only for a little while, life's
+                  great tragedies, and heartaches, and sorrows; if you mean that
+                  substance, the sale of which pours into our treasuries untold
+                  millions of dollars, which are used to provide tender care for
+                  our little crippled children, our blind, our deaf, our dumb,
+                  our pitiful aged and infirm; to build highways and hospitals
+                  and schools, then certainly I am for it.
                 </p>
                 <p className="data-source">
                   <strong>Data Source:</strong>{" "}
@@ -179,21 +147,24 @@ function App() {
               <h2>Why Your Vote Matters</h2>
               <div className="statement-content">
                 <p>
-                  The drug overdose crisis is one of the most pressing public
-                  health challenges of our time. Every vote represents a voice
-                  calling for comprehensive action to save lives and heal our
-                  communities.
+                  If when you say drugs you mean substances that bring people
+                  together, that spark creativity and conversation, that help
+                  individuals find moments of peace and joy in an often
+                  difficult world—if you mean substances that contribute to our
+                  economy and fund essential services for our most vulnerable
+                  citizens—then your support matters.
                 </p>
                 <p>
-                  By voting, you're joining thousands of concerned citizens who
-                  believe we need immediate, evidence-based solutions. Your
-                  support helps build momentum for policies that prioritize
-                  prevention, treatment, and recovery.
+                  By voting, you're expressing your position on policies that
+                  affect how we approach these substances in our society. Your
+                  voice helps shape the conversation about regulation, access,
+                  and the role these substances play in our communities.
                 </p>
                 <p>
-                  Together, we can turn the tide on this crisis and ensure that
-                  future generations don't have to face the same devastating
-                  statistics we see today.
+                  Whether you support or oppose current trends, your vote
+                  represents your perspective on this complex issue. Every vote
+                  counts in building a policy framework that reflects the will
+                  of the people.
                 </p>
               </div>
             </section>

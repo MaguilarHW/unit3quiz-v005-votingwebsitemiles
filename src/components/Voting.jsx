@@ -104,7 +104,7 @@ function Voting() {
       <div className="voting-header">
         <h2>Make Your Voice Heard</h2>
         <p className="voting-subtitle">
-          Do you support comprehensive action to address the drug overdose crisis?
+          Do you support the current approach to drugs in our society?
         </p>
       </div>
 

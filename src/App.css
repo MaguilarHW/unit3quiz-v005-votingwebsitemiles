@@ -23,18 +23,36 @@
 }
 
 .app-header {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  padding: 2.5rem 1rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 100%);
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+  padding: 3rem 2rem;
   text-align: center;
   box-shadow: 
-    0 4px 20px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    0 8px 32px rgba(99, 102, 241, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
   margin-bottom: 0;
-  border-bottom: 2px solid #c7d2fe;
+  border-bottom: none;
   position: relative;
   z-index: 1;
+  overflow: hidden;
+}
+
+.app-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, 
+    #c7d2fe 0%, 
+    #a78bfa 25%, 
+    #fbcfe8 50%, 
+    #a78bfa 75%, 
+    #c7d2fe 100%);
+  animation: shimmer 3s ease-in-out infinite;
 }
 
 .app-header::after {
@@ -43,25 +61,44 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #c7d2fe 0%, #fbcfe8 50%, #c7d2fe 100%);
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(199, 210, 254, 0.5) 20%, 
+    rgba(251, 207, 232, 0.5) 50%, 
+    rgba(199, 210, 254, 0.5) 80%, 
+    transparent 100%);
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
 }
 
 .app-header h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: #6366f1;
-  margin: 0 0 0.5rem 0;
-  line-height: 1.2;
-  letter-spacing: -0.5px;
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #6366f1 0%, #a78bfa 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  position: relative;
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: #64748b;
   margin: 0;
   font-weight: 500;
   font-style: italic;
+  letter-spacing: 0.2px;
 }
 
 .tab-navigation {
