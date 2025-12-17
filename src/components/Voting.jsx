@@ -157,18 +157,31 @@ function Voting() {
 
         <div className="results-bars">
           <div className="result-bar">
-            <div
-              className="bar-fill support-fill"
-              style={{ width: `${supportPercentage}%` }}
-            >
-              <span className="bar-label">Support {supportPercentage}%</span>
-            </div>
-            <div
-              className="bar-fill against-fill"
-              style={{ width: `${againstPercentage}%` }}
-            >
-              <span className="bar-label">Against {againstPercentage}%</span>
-            </div>
+            {supportPercentage > 0 && (
+              <div
+                className="bar-fill support-fill"
+                style={{ width: `${supportPercentage}%` }}
+              >
+                {supportPercentage >= 15 && (
+                  <span className="bar-label">Support {supportPercentage}%</span>
+                )}
+              </div>
+            )}
+            {againstPercentage > 0 && (
+              <div
+                className="bar-fill against-fill"
+                style={{ width: `${againstPercentage}%` }}
+              >
+                {againstPercentage >= 15 && (
+                  <span className="bar-label">Against {againstPercentage}%</span>
+                )}
+              </div>
+            )}
+            {totalVotes === 0 && (
+              <div className="bar-empty">
+                <span className="bar-label-empty">No votes yet</span>
+              </div>
+            )}
           </div>
         </div>
       </div>

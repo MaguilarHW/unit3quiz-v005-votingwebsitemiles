@@ -38,7 +38,7 @@ function DrugChart({ data, selectedDrug }) {
               position: 'left',
               offset: 10,
               style: { 
-                fill: '#1e3a8a', 
+                fill: '#6366f1', 
                 fontWeight: '600',
                 textAnchor: 'middle'
               }
@@ -50,13 +50,13 @@ function DrugChart({ data, selectedDrug }) {
           <Tooltip 
             contentStyle={{ 
               backgroundColor: '#ffffff',
-              border: '2px solid #1e3a8a',
+              border: '2px solid #c7d2fe',
               borderRadius: '8px',
               padding: '12px',
-              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.15)',
-              color: '#1e3a8a'
+              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+              color: '#6366f1'
             }}
-            labelStyle={{ color: '#1e3a8a', fontWeight: '700' }}
+            labelStyle={{ color: '#6366f1', fontWeight: '700' }}
             formatter={(value) => [Math.round(value).toLocaleString(), 'Deaths']}
           />
           <Legend 
@@ -72,10 +72,10 @@ function DrugChart({ data, selectedDrug }) {
           <Line 
             type="monotone" 
             dataKey="value" 
-            stroke="#dc2626" 
+            stroke="#a78bfa" 
             strokeWidth={3}
-            dot={{ r: 4, fill: '#dc2626', strokeWidth: 2, stroke: '#ffffff' }}
-            activeDot={{ r: 7, fill: '#dc2626', strokeWidth: 3, stroke: '#1e3a8a' }}
+            dot={{ r: 4, fill: '#a78bfa', strokeWidth: 2, stroke: '#ffffff' }}
+            activeDot={{ r: 7, fill: '#a78bfa', strokeWidth: 3, stroke: '#6366f1' }}
             name="Deaths"
           />
         </LineChart>
