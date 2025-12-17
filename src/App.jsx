@@ -109,7 +109,7 @@ function App() {
               <h2>Statement of Intent</h2>
               <div className="statement-content">
                 <p>
-                  But, if when you say drugs you mean the oil of conversation,
+                  If when you say drugs you mean the oil of conversation,
                   the philosophic substance, the elixir that is consumed when
                   good fellows get together, that puts a song in their hearts
                   and laughter on their lips, and the warm glow of contentment
